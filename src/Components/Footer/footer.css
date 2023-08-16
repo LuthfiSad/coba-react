@@ -1,0 +1,45 @@
+.footer{
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    left: 0;
+    right: 0;
+}
+.footer h2{
+    text-align: center;
+    color: #fff;
+    margin: 3rem 0;
+}
+.footer .sosials {
+  /* display: none; */
+  margin: 4rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.footer .sosials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.footer .sosials a img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  
+  .footer .sosials a {
+    flex-direction: column;
+  }
+  .footer .sosials {
+      margin: 4rem 0;
+  }
+  
+}
+@media (max-width: 485px) {
+  .footer .sosials a span {
+    font-size: 0.8rem;
+  }
+}

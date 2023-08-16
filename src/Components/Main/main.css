@@ -1,0 +1,146 @@
+.main {
+  padding: 2rem 0;
+}
+
+/* artikel */
+.main .artikel,
+.main .acara,
+.main .penutup {
+  margin: 5rem 0;
+}
+.main .artikel .artikel-isi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+.main .artikel .artikel-isi .content {
+  flex: 1 1 90%;
+}
+.main .artikel .artikel-isi .content h2 {
+  color: darkorange;
+}
+.main .artikel .artikel-isi .content h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.main .artikel .artikel-isi .content p {
+  text-align: justify;
+}
+.main .artikel .artikel-isi .content a {
+  display: inline-flex;
+  padding: 1rem 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+.main .artikel .artikel-isi .content a img {
+  /* width: 0.6rem; */
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.main .artikel .artikel-isi .img-artikel {
+  flex: 1 1 100%;
+}
+.main .artikel .artikel-isi .img-artikel img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Acara */
+
+.main .acara .flex-text {
+  display: flex;
+  justify-content: space-between;
+}
+.main .acara .flex-text a {
+  font-size: 1rem;
+  color: lightgrey;
+}
+.main .acara h2:nth-child(1) {
+  margin: 2rem 0;
+}
+.main .acara h2 {
+  margin: 5rem 0;
+}
+.main .acara .awalan {
+  margin-left: 2rem;
+  text-align: justify;
+}
+.main .acara .row {
+  margin-top: 2rem;
+  display: flex;
+  /* margin: 0 2rem; */
+  justify-content: space-around;
+  text-align: center;
+  line-height: 2;
+}
+.main .acara .row .card-user {
+  /* width: 20rem; */
+  flex-shrink: 1;
+}
+.main .acara .row .card-user img {
+  width: 100%;
+}
+.main .acara .row .card-user p {
+  font-weight: 600;
+}
+.main .acara .acara-card {
+  margin: 0 3rem;
+  gap: 0 1rem;
+}
+.main .acara .acara-card .card {
+  flex-shrink: 1;
+}
+.main .acara .acara-card img {
+  border-radius: 10px;
+  width: 100%;
+}
+.main .acara .acara-card p {
+  color: lightgray;
+}
+
+/* penutup */
+.main .penutup .title {
+  margin: 4rem 0;
+}
+.main .penutup .artikel-isi .content {
+  flex: 1 1 100%;
+  margin-left: 5rem;
+}
+.main .penutup .artikel-isi .img-artikel {
+  flex: 1 1 70%;
+}
+.main .artikel .artikel-isi .content p {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .main .artikel .artikel-isi,
+  .main .acara .row {
+    flex-wrap: wrap;
+  }
+  .main .acara .row .card-user {
+    width: 20rem;
+  }
+  .main .acara .acara-card .card {
+    margin-top: 3rem;
+    width: 20rem;
+  }
+  .main .artikel .artikel-isi .content p {
+    width: 100%;
+  }
+  .main .penutup .artikel-isi .img-artikel {
+    width: 20rem;
+    flex: 0 1 60%;
+  }
+  .main .penutup .artikel-isi .content {
+    margin-left: 0;
+  }
+}
